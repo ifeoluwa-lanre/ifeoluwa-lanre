@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/30ba500597.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="#" alt="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                
+                
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-info">
+                <p>Web Developer x UI/UX Designer</p>
+                <h1>👋Hey, I am <span>Ifeoluwa </span><br> Lanre-Akinyo</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT ME  -->
+    <div id="about-me" class="about-me">
+        <div class="about-container">
+            <div class="row">
+                <div class="abt-col-1">
+                    <img src="images/IMG_1538.jpg" alt="">
+                </div>
+                <div class="abt-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        
+                        &nbsp; I am a passionate third-year computer science 
+                        student at the University of Saskatchewan. I'm on an exciting journey to become a 
+                        web developer and UI/UX designer, driven by a love for creating engaging and user-centered 
+                        digital experiences.
+                        <br>
+                        &nbsp;
+                        As a beginner, I bring a fresh perspective and a thirst for learning. My dedication to 
+                        mastering new skills, combined with my fast-learning abilities, fuels my ambition to excel 
+                        in the tech industry. 
+                        <br>
+                        &nbsp;
+                        I believe that the fusion of technical knowledge and design thinking can result in exceptional 
+                        products, and I'm eager to contribute to innovative projects and grow as a professional. Let's 
+                        connect and embark on this exciting journey together!</p>
+
+                    <div class="titles">
+                        <p class="title-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="title-links" onclick="opentab('Experience')">Experience </p>
+                        <p class="title-links" onclick="opentab('Education')">Education</p>
+                        <p class="title-links" onclick="opentab('Volunteer')">Volunteer</p>
+                        <!-- <p class="title-links">Certifications</p> -->
+                    </div>
+                    <div class="contents active-skills" id="Skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Product Design</li>
+                            <li><span>Web Development</span><br>FullStack Webdevelopment</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="Experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Old Navy</li>
+                            <li><span>June 2022 - Sept 2022</span><br>Popeyes Louisiana Kitchen</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="Education">
+                        <ul>
+                            <li><span>2021-present</span><br>University of Saskatchewan - Bsc Computer Science</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="Volunteer">
+                        <ul>
+                            <li><span>PASA - Pan African Student Association</span><br>Committee Member</li>
+                            <li><span>UXco - UX Collective </span><br>1 of 3 Web development/design team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------- SERVICES ------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FullStack Web Development/<br>Programming</h2>
+                    <p>As a full-stack web developer, I offer a comprehensive skill set that spans both front-end
+                        and back-end development. On the front-end, I excel in HTML, CSS and Javascript, that enables 
+                        me to craft responsive and engaging user interface. I am also experienced with frameworks like
+                        React...  
+                    </p>
+                    <a href="skills.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-object-group"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>As a UI/UX Designer, I posses a versatile skill set that's essential for crafting intuitive and engaging
+                        digital experiences. I employ techniques such as intervies, surveys and usability testing to gain deep 
+                        insights into the users behaviour and prefrences....
+                    </p>
+                    <a href="skills.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h2>Web Design</h2>
+                    <p>As a web designer, I bring a dynamic skill set to the digital landscape. My expertise revolves around creating
+                        visually captivating and user-centric websites. My designs prioritize aesthtics, ensuring the websites not only 
+                        look appealing but also effectively convey the intended message.... 
+                    </p>
+                    <a href="skills.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- .....................................PORTFOLIO---------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects (●'◡'●)</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/temi.png">
+                    <br>
+                    <div class="port">
+                        <h3>An hairstylist Website</h3>
+                        <br>
+                        <p>A static but functional website for an hairstylist that showcases her work and allows her
+                            clients to book an appointment.The website showcases the styles done by the hairstylist but the writings are in latin.
+                        </p>
+                        <a href="https://ifeoluwa-lanre.github.io/TemiStyles/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/webdev.png">
+                    <br>
+                    <div class="port">
+                        <h3>An Programming channel Website</h3>
+                        <br>
+                        <p>This is a fully functional website that allows users to post coding questions and get replies to that question. I made this website using React for the frontend, Node.js for the backend, MySQL for the database, and Dockerhub to run the application.</p>
+                        <a href="demo file.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+
+            </div>
+        <div class="container">
+            <h1 class="sub-title">In Progress (●'◡'●)</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Chosen-gen reg.png">
+                    <br>
+                    <div class="port">
+                        <h3>Registration Form</h3>
+                        <br>
+                        <p>A registration Form for a youth church, that new members use to register so that the church
+                            can be in contact with them.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Personal Banking - Landing Page.jpg">
+                    <div class="port">
+                        <br>
+                        <h3>UX Research</h3>
+                        <br>
+                        <p>A Food order customization app for a local cafe.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Landing Page Redesign design Ui_Ux design.jpeg">
+                    <br>
+                    <div class="port">
+                        <h3>UI/ Web Design</h3>
+                        <br>
+                        <p>.......</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">SEE MORE</a>
+        </div>
+    </div>
+    <!-- -------------------------------------CONTACT------------------------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> temiakinyo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +1(639)-998-1783</p>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/ife_akinyo/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/ifeoluwa-lanre-akinyo-346648262"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ifeoluwa-lanre"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Computer Science Resume.pdf" download class="btn CV">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn CV">Submit</button>
+                    </form>
+                    <!-- <span id="message">Submited!</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright ©️ Ifeoluwa 2023. All rights Reserved.
+        </div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+    <!-- <script>
+
+        var titlelinks = document.getElementsByClassName("tittle-links");
+        var contents = document.getElementsByClassName("contents");
+        function opentab(name) {
+            for (titlelink of titlelinks) {
+                titlelink.classList.remove("active-link");
+            }
+            for (content of contents) {
+                content.classList.remove("active-skills");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(name).classList.add("active-skills");
+        }
+
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzPqoq-T-Q_qBFgjXsEhoIVtJHTUg7vLkMQMTKdkpM5zzP-YB4Y0TkPz6K6Jz_JZgs6lA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const message = document.getElementById("message")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    message.innerHTML = "Message sent successfully!"
+                    setTimeout(function () {
+                        message.innerHTML = ""
+                    },I,5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+
+
+</body>
+
+</html>
